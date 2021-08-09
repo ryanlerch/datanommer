@@ -8,3 +8,19 @@ updates:
   versioning-strategy: lockfile-only
   allow:
   - dependency-type: all
+- package-ecosystem: pip
+  directory: "/datanommer.commands/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  versioning-strategy: lockfile-only
+  allow:
+  - dependency-type: all
+- package-ecosystem: pip
+  directory: "/datanommer.consumer/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  versioning-strategy: lockfile-only
+  allow:
+  - dependency-type: all
